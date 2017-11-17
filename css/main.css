@@ -1,0 +1,183 @@
+/*CLASES REUTILIZABLES*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.71429;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+img {
+  vertical-align: middle;
+}
+
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.container:before, .container:after { /*para ingresar contenido nuevo antes de un texto
+  y after para ingresar contenido nuevo despuès del texto*/
+  content: " ";
+  display: table;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container:after {
+  clear: both;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+a {
+  color: #373B47;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E95853;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/*ESCRIBE TU CÓDIGO DESDE AQUÍ*/
+
+header {
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  height: 100px;
+  z-index: 1000;
+  margin: 30px;
+}
+
+div > a {
+  display: inline-block;
+  background-color: #fff;
+  height: 30;
+  width: 100px;
+  display: inline-block;
+  text-align: right;
+  padding: rigth;
+  position: relative;
+}
+
+span {
+  bottom: 40%;
+  display: block;
+  text-align: bottom;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+#logo {
+    height: 50px;
+    left: 83%;
+    position: absolute;
+    width: 60px;
+    z-index: 0;
+}
+
+.pink {
+  background-color: #f67b74;
+}
+/* revisar lo que me pueda servir de la parte de abajo
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.71429;
+}
+
+header {
+  position: fixed;
+  background-color: #fff;
+  width: 80%;
+  z-index: 0;
+  margin: 0;
+
+}
+
+nav {
+  font: sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  text-align: center;
+}
+
+ul {
+  display: block;
+  list-style: none;
+  background-color: #fff;
+  line-height: 20px;
+}
+
+
+li {
+  width: 100px;
+  display: inline-block;
+}
+
+a {
+  display: block;
+}
+
+footer {
+  position: relative;
+  display: inline-block;
+  color: white;
+  width: 130%;
+  background-color: black;
+  text-align: center;
+  margin: 0;
+
+}
+
+.logo{
+  height: 50px;
+  left: 83%;
+  position: absolute;
+  width: 50px;
+  z-index: 0;
+}
